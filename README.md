@@ -8,8 +8,8 @@
 Simplistic generator based utility for consuming apis and making easy http requests
 
 ```
-npm i rain-util
-var $util = require('rain-util');
+npm i --save rain-util-http
+var $util = require('rain-util-http');
 ```
 
 ### http requests ###
