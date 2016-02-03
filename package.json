@@ -1,0 +1,54 @@
+{
+  "name": "rain-util-http",
+  "version": "0.3.7",
+  "author": "Max Millien",
+  "description": "Simplistic generator based utility for consuming apis and making easy http requests",
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/maxmill/rain-util-http.git"
+  },
+  "license": "MIT",
+  "main": "./bin",
+  "scripts": {
+    "clean": "npm cache clean && rm -rf node_modules bin data",
+    "build": "babel lib -d bin",
+    "test": "npm run build && tape ./test",
+    "watch": "watch 'npm run build' lib"
+  },
+  "keywords": [
+    "co",
+    "api",
+    "koa",
+    "http",
+    "utils",
+    "requests",
+    "yieldable",
+    "generators",
+    "convenience"
+  ],
+  "dependencies": {
+    "request": "2.x"
+  },
+  "devDependencies": {
+    "babel": "*",
+    "babel-cli": "*",
+    "babel-plugin-transform-object-rest-spread": "*",
+    "babel-preset-es2015-node5": "*",
+    "babel-preset-stage-3": "*",
+    "co-tape":"*",
+    "tape": "4.x",
+    "tape-catch": "1.x"
+  },
+  "engines": {
+    "node": ">= 4.2.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015-node5",
+      "stage-3"
+    ],
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
+  }
+}
