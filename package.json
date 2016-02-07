@@ -1,6 +1,6 @@
 {
   "name": "rain-util-http",
-  "version": "0.3.8",
+  "version": "0.4.0",
   "author": "Max Millien",
   "description": "Simplistic generator based utility for consuming apis and making easy http requests",
   "repository": {

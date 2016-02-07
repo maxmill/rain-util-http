@@ -33,4 +33,3 @@ var api2Response = yield api2.post('another url', requestBody);
 ### credits ###
 
 - https://github.com/request/request
-- https://github.com/substack/tape
