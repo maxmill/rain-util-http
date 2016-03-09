@@ -1,6 +1,6 @@
 {
   "name": "rain-util-http",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "author": "Max Millien",
   "description": "Simplistic generator based utility for consuming apis and making easy http requests",
   "repository": {
@@ -12,8 +12,9 @@
   "scripts": {
     "clean": "npm cache clean && rm -rf node_modules bin data",
     "build": "babel lib -d bin",
-    "test": "npm run build && tape ./test",
-    "watch": "watch 'npm run build' lib"
+    "postbuild": "npm test",
+    "test": "tape ./test",
+    "watch": "watch 'npm run build' lib test"
   },
   "keywords": [
     "co",
@@ -37,7 +38,8 @@
     "babel-preset-stage-3": "*",
     "co-tape":"*",
     "tape": "4.x",
-    "tape-catch": "1.x"
+    "tape-catch": "1.x",
+    "watch":"0.17.x"
   },
   "engines": {
     "node": ">= 4.2.0"
